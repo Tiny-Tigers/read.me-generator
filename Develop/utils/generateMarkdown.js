@@ -11,10 +11,8 @@ function generateMarkdown(answers) {
   
   To install all modules and dependencies, run
   
-  \`\`\`
   ${answers.installation}
-  \`\`\`
-  
+
   ## Usage
   
   ${answers.usage}
@@ -26,10 +24,7 @@ function generateMarkdown(answers) {
   ## Tests
   
   In order to test the application, run
-  
-  \`\`\`
   ${answers.test}
-  \`\`\`
 `;
 }
 

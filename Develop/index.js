@@ -52,7 +52,7 @@ function writeToFile(fileName, answers) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((answers) => {
-        writeToFile('README.md', JSON.stringify(answers));
+        writeToFile('README.md', generateMarkdown(answers));
     });
 }
 

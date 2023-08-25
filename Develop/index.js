@@ -8,6 +8,11 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     {
         type: 'input',
+        name: 'title',
+        message: 'What is your project called?'
+    },
+    {
+        type: 'input',
         name: 'description',
         message: 'Describe the intended funcion of the project'
     },
@@ -40,18 +45,18 @@ const questions = [
     },
 ];
 
-inquirer.prompt(questions).then((answers) => {
-         console.log(answers)
-})
 // TODO: Create a function to write README file
-function writeToFile(fileName, answers) {[
-    fileName = 'README.md',
-]}
+function writeToFile(fileName, $(answers)) {
+    [
+        fileName = 'README.md',
+    ]
+}
 
-//fs.writeFile(fileName, JSON.stringify(answers))
-
+fs.writeFile(fileName, JSON.stringify(answers))
 // TODO: Create a function to initialize app
-function init() {}
+function init() {inquirer.prompt(questions).then((answers) => {
+
+ }
 
 // Function call to initialize app
 init();

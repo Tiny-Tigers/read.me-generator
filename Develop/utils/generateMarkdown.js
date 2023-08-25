@@ -1,34 +1,34 @@
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown(answers) {
+  return `# ${answers.title}
 
   ## Description
   
-  ${data.description}
+  ${answers.description}
   
   ## Installation
   
   To install all modules and dependencies, run
   
   \`\`\`
-  ${data.installation}
+  ${answers.installation}
   \`\`\`
   
   ## Usage
   
-  ${data.usage}
+  ${answers.usage}
     
   ## Contributing
   
-  ${data.contributing}
+  ${answers.contributing}
   
   ## Tests
   
   In order to test the application, run
   
   \`\`\`
-  ${data.test}
+  ${answers.test}
   \`\`\`
 `;
 }

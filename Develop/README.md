@@ -1,1 +1,1 @@
-# read.me-generator
+{"title":"fbfbf","description":"fbfbf","installation":"npm install","usage":"fbfbfb","contributing":"fbfbfb","tests":"npm test"}

@@ -46,17 +46,15 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, $(answers)) {
-    [
-        fileName = 'README.md',
-    ]
+function writeToFile(fileName, answers) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), answers);
 }
-
-fs.writeFile(fileName, JSON.stringify(answers))
 // TODO: Create a function to initialize app
-function init() {inquirer.prompt(questions).then((answers) => {
-
- }
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+        writeToFile('README.md', JSON.stringify(answers));
+    });
+}
 
 // Function call to initialize app
 init();

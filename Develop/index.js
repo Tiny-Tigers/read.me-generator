@@ -11,14 +11,33 @@ const questions = [
         name: 'description',
         message: 'Describe the intended funcion of the project'
     },
-
-    // Installation, 
-    // Usage, 
-    // License, 
-    // Contributing, 
-    // Tests,
-    // Questions
-    
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What command should be used for installation?',
+        default: 'npm install'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Is there anything the user needs to know about using the repo?'
+    },
+    // {
+    //     type: 'input',
+    //     name: 'license',
+    //     message: 'Describe the intended funcion of the project'
+    // },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'is there anything the user needs to know when making a contribution?'
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'What command should be used to test the app?',
+        default: 'npm test'
+    },
 ];
 
 inquirer.prompt(questions).then((answers) => {
